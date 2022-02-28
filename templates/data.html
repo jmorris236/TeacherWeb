@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html>
+  <head>
+    <!-- ... -->
+  </head>
+  <body>
+    <h3>My first graph</h3>
+      <div id="chart">
+        <embed type="image/svg+xml" src= {{ chart|safe }} width="1000" height="1000" />
+      </div>
+  </body>
+</html>
+{% endblock %}
